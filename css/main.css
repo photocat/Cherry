@@ -114,15 +114,17 @@ nav {
     margin: 0 auto;
     height: 3.6rem;
     text-align: right;
+    display: block;
 }
 
 .nav-bar li {
     list-style: none;
     display: inline-block;
     margin-top: 0.9rem;
+    position: relative;
 }
 
-.nav-bar li:nth-child(-n + 7) {
+.nav-bar li:nth-child(-n + 6) {
     margin-right: 5.3rem;
 }
 
@@ -130,10 +132,45 @@ nav {
     margin-right: 2.1rem;
 }
 
-.nav-bar a {
+.nav-bar > li > a {
     text-decoration: none;
     color: #fff;
     font: 1.6rem "ArialBold";
+    display: block;
+    height: 28px;
+}
+
+/*Sub-menu */
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 13rem;
+    top: 2.7rem;
+    left: 0;
+    background-color: #95161f;
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font: 1.4rem "ArialBold";
+    text-align: left;
+    width: 10rem;
+}
+
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+.nav-bar > li:hover > .submenu {
+    display: block;
 }
 
 /* Breadcrumbs */
@@ -142,7 +179,7 @@ nav {
     max-width: 98rem;
     margin: 0 auto;
     background-color: #fff;
-    height: 6rem;
+    height: 3.7rem;
 }
 
 .breadcrumbs {
