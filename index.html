@@ -11,20 +11,20 @@
 
 <body>
     <header>
-        <div class="head-container">
-            <section class="logo-search clearfix">
+        <section class="head-container">
+            <div class="logo-search clearfix">
                 <div class="logo">
                     <h1>Cherry</h1>
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
                 </div>
                 <div class="search">
-                    <form>
+                    <form action="#">
                         <input type="search" placeholder="Search&#133;" id="search">
                         <button class="icon"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <section class="slider">
             <ul class="rslides">
                 <li><img src="./img/slider-img1.jpg" alt="Slider Image">
@@ -81,57 +81,12 @@
             </ul>
         </div>
     </header>
-    <div class="main clearfix">
-        <aside>
-            <section class="contact-us">
-                <form>
-                    <fieldset>
-                        <legend>
-                            <h2 class="contact-label">Contact Us</h2>
-                        </legend>
-                        <label>
-                        <input type="text" name="firstName" placeholder="Your Name">
-                    </label>
-                        <label>
-                        <input type="datetime" name="datetime" placeholder="DayTime Number">
-                    </label>
-                        <label>
-                        <input type="email" name="email" placeholder="Email Adress">
-                    </label>
-                        <label>
-                        <input type="text" name="city" placeholder="City">
-                    </label>
-                        <label>
-                        <input name="problem" list="problemId" placeholder="Problem With">
-                            <datalist id="problemId">
-                                <option value="Hands">
-                                <option value="Brain">
-                                <option value="Both">
-                            </datalist>
-                    </label>
-                        <label>
-                        <input name="brand" list="branId" placeholder="Brand">
-                            <datalist id="branId">
-                                <option value="Gucci">
-                                <option value="Prada">
-                                <option value="Barabashova">       
-                            </datalist>
-                    </label>
-                        <input type="button" class="contact-button" value="Lorem ipsum dolor">
-                    </fieldset>
-                </form>
-            </section>
-            <div class="contact-info">
-                <h2 class="contact-info-label">Headline</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                <a href="#">More about</a>
-            </div>
-        </aside>
+    <section class="main clearfix">
         <div class="description">
-            <section class="description-text">
+            <div class="description-text">
                 <h2 class="description-label">What We Do&hellip;</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <a href="#">reprehenderit in voluptate velit esse</a> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </section>
+            </div>
             <div class="description-images clearfix">
                 <div class="description-tile">
                     <h3 class="description-headline">Admin panel</h3>
@@ -146,7 +101,7 @@
                     <img src="./img/descr_img3.jpg" alt="Videos image">
                 </div>
             </div>
-            <section class="description-lists clearfix">
+            <div class="description-lists clearfix">
                 <h2 class="description-label">Lists</h2>
                 <div class="unordered-circle list">
                     <div class="list-name">
@@ -199,17 +154,17 @@
                         <li>Aenean sit amet erat nunc</li>
                     </ol>
                 </div>
-            </section>
-            <section class="description-table">
+            </div>
+            <div class="description-table">
                 <h2 class="description-label">Table</h2>
                 <table>
                     <thead>
                         <tr>
-                            <td>№</td>
-                            <td>Toranton rate</td>
-                            <td>Puranocak var berond</td>
-                            <td>Intime modular to cavan</td>
-                            <td>Language</td>
+                            <th>№</th>
+                            <th>Toranton rate</th>
+                            <th>Puranocak var berond</th>
+                            <th>Intime modular to cavan</th>
+                            <th>Language</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -264,9 +219,54 @@
                         </tr>
                     </tbody>
                 </table>
-            </section>
+            </div>
         </div>
-    </div>
+        <aside>
+            <section class="contact-us">
+                <form action="#">
+                    <fieldset>
+                        <legend>
+                            <h2 class="contact-label">Contact Us</h2>
+                        </legend>
+                        <label>
+                        <input type="text" name="firstName" placeholder="Your Name">
+                    </label>
+                        <label>
+                        <input type="datetime" name="datetime" placeholder="DayTime Number">
+                    </label>
+                        <label>
+                        <input type="email" name="email" placeholder="Email Adress">
+                    </label>
+                        <label>
+                        <input type="text" name="city" placeholder="City">
+                    </label>
+                        <label>
+                        <input name="problem" list="problemId" placeholder="Problem With">
+                            <datalist id="problemId">
+                                <option value="Hands">
+                                <option value="Brain">
+                                <option value="Both">
+                            </datalist>
+                    </label>
+                        <label>
+                        <input name="brand" list="branId" placeholder="Brand">
+                            <datalist id="branId">
+                                <option value="Gucci">
+                                <option value="Prada">
+                                <option value="Barabashova">       
+                            </datalist>
+                    </label>
+                        <input method="post" type="button" class="contact-button" value="Lorem ipsum dolor">
+                    </fieldset>
+                </form>
+            </section>
+            <div class="contact-info">
+                <h2 class="contact-info-label">Headline</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <a href="#">More about</a>
+            </div>
+        </aside>
+    </section>
     <footer>
         <div class="footer-inner clearfix">
             <div class="hours">
